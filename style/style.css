@@ -3,7 +3,7 @@
   --ui-effects-color: rgb(15, 15, 109);
   --ui-text-color: white;
   --text-color: black;
-  --blog-bg-color: rgb(241, 241, 241);
+  --blog-bg-color: #ddd;
 }
 
 /* Reset styles */
@@ -18,6 +18,20 @@
 /* Header */
 header {
   border-bottom: 50px solid var(--ui-effects-color); /* Blue border below the entire menu */
+}
+
+p{
+  font-size: 1rem;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
 /* Navbar container */
@@ -109,6 +123,7 @@ header {
   display: flex; /* Using CSS Grid for 2 columns */
   align-items: center; /* Aligns content vertically */
   justify-content: space-between; /* Spreads columns evenly */  
+  margin-bottom: 30px;
 }
 
 .banner-image {
@@ -132,34 +147,101 @@ header {
   justify-content: center;
 }
 
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
 .banner-slogan p {
   font-size: 1.2rem;
   line-height: 1.5;
 }
 
 /* Add spacing for main content below the banner */
-.section-partners li{
-  list-style-type: none;
-  display: flex;
-  clear: both;
+.section-partners{
+  text-align: center;
 }
 
-.section-partners .logo{
-  width: 2rem;
-  height: auto;
+.section-partners h1{
+  margin-bottom: 50px;
+}
+
+.section-partners ul {
+  list-style: none; /* Removes bullet points */
+  display: flex; /* Activates Flexbox */
+  flex-wrap: wrap; /* Allows wrapping if there are too many logos */
+  justify-content: space-evenly; /* Evenly distribute items with equal spacing */
+}
+
+.section-partners ul li {
+  flex: 1 1 calc(20% - 20px); /* Adjust the width of items */
+  max-width: 100px; /* Prevents images from being too large */
+  text-align: center;
+}
+
+.section-partners ul li img {
+  width: 100%; /* Ensures logos fit within their container */
+  height: auto; /* Maintains aspect ratio */
+  object-fit: contain; /* Ensures the image scales well without distortion */
+}
+
+.sect-plan{
+  text-align: center;
+  list-style-type: none;
+}
+
+.sect-plan ul{
+  display: flex;
+}
+
+.sect-plan ul li{
+  
+}
+
+/* Card container */
+.plan-card{
+  width: 300px; 
+  border: 2px solid var(--blog-bg-color); /* Border with light gray color */
+  border-radius: 15px; 
+  overflow: hidden; /* Ensures content stays inside rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for a lifted effect */
+  background-color: #fff; /* White background for the card */
+  text-align: center; /* Centers the text content */
+  margin: 20px auto; /* Centers the card horizontally */
+  transition: transform 0.3s, box-shadow 0.3s; /* Animation for hover effect */
+}
+
+/* Hover effect */
+.plan-card:hover {
+  transform: translateY(-5px); /* Slightly lift the card */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+/* Card image styling */
+.plan-card-image {
+  width: 100%; /* Makes the image responsive */
+  height: auto; /* Maintains aspect ratio */
+  border-bottom: 2px solid var(--blog-bg-color); /* Separator between image and caption */
+}
+
+/* Card caption styling */
+.plan-card-caption {
+  padding: 15px; /* Adds spacing inside the caption area */
+}
+
+.plan-card-caption h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: var(--ui-effects-color); /* Dark gray for title */
+}
+
+.plan-card-caption p {
+  font-size: 1rem;
+  color: #666; /* Lighter gray for description */
+  line-height: 1.5; /* Improves readability */
+}
+
+.plan-pricing{
+
 }
 
 main {
   margin-bottom: 20px;
-}
-
-h1{
-  font-size: 5rem;
 }
 
 .blog-area{
@@ -189,7 +271,3 @@ h1{
   padding-left: 10px;
 }
 
-.blog-area-text p{
-  font-size: 1.5rem;
-  justify-content: center;
-}
