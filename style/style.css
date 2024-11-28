@@ -1,0 +1,195 @@
+:root{
+  --button-color: #f30909;
+  --ui-effects-color: rgb(15, 15, 109);
+  --ui-text-color: white;
+  --text-color: black;
+  --blog-bg-color: rgb(241, 241, 241);
+}
+
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+
+/* Header */
+header {
+  border-bottom: 50px solid var(--ui-effects-color); /* Blue border below the entire menu */
+}
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 20px;
+  color: var(--ui-text-color);
+  overflow: hidden;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Logo styling */
+.logo img {
+  height: 5rem; /* Adjust as needed */
+  width: auto;
+}
+
+/* Navigation menu styling */
+.nav-menu {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+/* Navigation menu items */
+.nav-menu li a {
+  text-decoration: none;
+  color: var(--text-color);
+  display: block;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+  color: var(--ui-effects-color); /* Highlight color on hover */
+}
+
+/* Active/Clicked styles */
+.nav-menu li a.active {
+  color: var(--button-color); /* Highlight the active link */
+}
+
+/* Bottom border for active/hover */
+.nav-menu li a.active::after,
+.nav-menu li a:hover::after {
+    content: ""; /* Pseudo-element for the border */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%; /* Full-width border */
+    height: 3px; /* Thickness of the border */
+    transition: width 0.3s ease-in-out; /* Animation for smooth effect */
+}
+
+/* Inactive state (no border) */
+.nav-menu li a::after {
+    width: 0; /* Initially no border */
+}
+
+/* Navigation button styling */
+.nav-button button {
+  background-color: var(--button-color);
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--ui-text-color);
+  text-transform: capitalize;
+  padding: 7px 20px;
+  letter-spacing: 0.25px;
+}
+
+.nav-button a:hover {
+  background-color: var(--ui-effects-color)!important;
+  color: var(--ui-effects-color)!important;
+  border-bottom: 2px solid var(--ui-effects-color)!important;
+}
+
+.nav-button button:hover {
+  background-color: var(--ui-effects-color);
+}
+
+/* Banner image styling */
+.banner{
+  display: flex; /* Using CSS Grid for 2 columns */
+  align-items: center; /* Aligns content vertically */
+  justify-content: space-between; /* Spreads columns evenly */  
+}
+
+.banner-image {
+  flex:1; /* Allows the image to take up one portion of the banner */
+  max-width: 50%; /* Image occupies half of the banner width */
+  text-align: right;
+}
+
+.banner-image img {
+  width: 100%; /* Makes the image responsive */
+  height: auto; /* Maintains the image's aspect ratio */
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+/* Banner slogan styling */
+.banner-slogan {
+  flex: 1; /* Allows the text to take up one portion of the banner */
+  color: var(--text-color, --ui-text-color);
+  padding-right: 20px; /* Adds spacing between text and image */
+  margin: 0 10%;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.banner-slogan p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+/* Add spacing for main content below the banner */
+.section-partners li{
+  list-style-type: none;
+  display: flex;
+  clear: both;
+}
+
+.section-partners .logo{
+  width: 2rem;
+  height: auto;
+}
+
+main {
+  margin-bottom: 20px;
+}
+
+h1{
+  font-size: 5rem;
+}
+
+.blog-area{
+  background-color: var(--blog-bg-color);
+  justify-content: space-between;
+}
+
+.blog-area-section{
+  margin: 30px;
+  display: flex;
+}
+
+.blog-area h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.blog-area img{
+  margin: 20px;
+  padding: 20px;
+  width: 100%;
+  height: auto;
+}
+
+.blog-area-text{
+  margin: 20px;
+  padding-left: 10px;
+}
+
+.blog-area-text p{
+  font-size: 1.5rem;
+  justify-content: center;
+}
