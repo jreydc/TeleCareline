@@ -4,6 +4,7 @@
   --ui-text-color: white;
   --text-color: black;
   --blog-bg-color: #ddd;
+  --plan-card-price: rgb(134, 134, 134);
 }
 
 /* Reset styles */
@@ -189,13 +190,9 @@ h1 {
   display: flex;
 }
 
-.sect-plan ul li{
-  
-}
-
 /* Card container */
 .plan-card{
-  width: 300px; 
+  width: 350px; 
   border: 2px solid var(--blog-bg-color); /* Border with light gray color */
   border-radius: 15px; 
   overflow: hidden; /* Ensures content stays inside rounded corners */
@@ -204,6 +201,7 @@ h1 {
   text-align: center; /* Centers the text content */
   margin: 20px auto; /* Centers the card horizontally */
   transition: transform 0.3s, box-shadow 0.3s; /* Animation for hover effect */
+  padding: 20px;
 }
 
 /* Hover effect */
@@ -214,31 +212,51 @@ h1 {
 
 /* Card image styling */
 .plan-card-image {
-  width: 100%; /* Makes the image responsive */
+  width: 60%; /* Makes the image responsive */
   height: auto; /* Maintains aspect ratio */
-  border-bottom: 2px solid var(--blog-bg-color); /* Separator between image and caption */
+  margin-top: 20px;
+}
+
+.plan-pricing-holder {
+  display: flex;
+  justify-content: space-around;
+}
+
+.plan-pricing {
+  color: var(--plan-card-price);
 }
 
 /* Card caption styling */
-.plan-card-caption {
-  padding: 15px; /* Adds spacing inside the caption area */
-}
-
 .plan-card-caption h3 {
   font-size: 1.5rem;
-  margin-bottom: 10px;
+  margin: 20px 20px;
   color: var(--ui-effects-color); /* Dark gray for title */
 }
 
-.plan-card-caption p {
-  font-size: 1rem;
-  color: #666; /* Lighter gray for description */
-  line-height: 1.5; /* Improves readability */
+.plan-card-caption section {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
-.plan-pricing{
-
+.plan-card-caption h4 {
+  font-size: 1.25rem;
+  text-align: left;
+  margin-left: 20px;
 }
+
+.plan-card-caption-li {
+  text-align: left;
+  font-size: medium;
+  margin-left: 20px;
+}
+
+.plan-icon {
+  width: 8%; /* Icon width */
+  height: auto; /* Icon height */
+  vertical-align: middle; /* Aligns the icon with the text */
+  margin-right: 10px; /* Adds spacing between icon and text */
+}
+
 
 main {
   margin-bottom: 20px;
