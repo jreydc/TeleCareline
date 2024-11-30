@@ -35,6 +35,24 @@ h1 {
   margin-bottom: 10px;
 }
 
+h3 {
+  font-size: 1.5rem;
+  margin: 0px 20px;
+  color: var(--ui-effects-color); /* Dark gray for title */
+}
+
+main {
+  margin-bottom: 20px;
+}
+
+footer>h1 {
+  font-size: 3.5rem;
+  text-align: center;
+  margin: 50px;
+  padding: 20px;
+  font-weight: bold;
+}
+
 /* Navbar container */
 .navbar {
   display: flex;
@@ -60,6 +78,24 @@ h1 {
   display: flex;
   justify-content: space-around;
   gap: 20px;
+}
+
+/* Section styling for Cards*/
+.sect-cards-area{
+  text-align: center;
+  list-style-type: none;
+}
+
+.sect-cards-area ul{
+  display: flex;
+  margin-bottom: 20px;
+}
+
+/* Card image styling for Plan and Personal Alarm section*/
+.card-image {
+  width: 60%; /* Makes the image responsive */
+  height: auto; /* Maintains aspect ratio */
+  margin-top: 20px;
 }
 
 /* Navigation menu items */
@@ -181,16 +217,7 @@ h1 {
   object-fit: contain; /* Ensures the image scales well without distortion */
 }
 
-.sect-plan{
-  text-align: center;
-  list-style-type: none;
-}
-
-.sect-plan ul{
-  display: flex;
-}
-
-/* Card container */
+/* Plan Card container */
 .plan-card{
   width: 350px; 
   border: 2px solid var(--blog-bg-color); /* Border with light gray color */
@@ -210,13 +237,6 @@ h1 {
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
 }
 
-/* Card image styling */
-.plan-card-image {
-  width: 60%; /* Makes the image responsive */
-  height: auto; /* Maintains aspect ratio */
-  margin-top: 20px;
-}
-
 .plan-pricing-holder {
   display: flex;
   justify-content: space-around;
@@ -224,15 +244,10 @@ h1 {
 
 .plan-pricing {
   color: var(--plan-card-price);
+  margin-bottom: 20px;
 }
 
-/* Card caption styling */
-.plan-card-caption h3 {
-  font-size: 1.5rem;
-  margin: 20px 20px;
-  color: var(--ui-effects-color); /* Dark gray for title */
-}
-
+/*Plan Card caption styling */
 .plan-card-caption section {
   font-size: 1.5rem;
   margin-bottom: 10px;
@@ -242,6 +257,10 @@ h1 {
   font-size: 1.25rem;
   text-align: left;
   margin-left: 20px;
+}
+
+.plan-card-caption h3 {
+  margin: 20px;
 }
 
 .plan-card-caption-li {
@@ -257,11 +276,23 @@ h1 {
   margin-right: 10px; /* Adds spacing between icon and text */
 }
 
-
-main {
-  margin-bottom: 20px;
+/*Personal Alarm Card styling */
+.pa-card-holder{
+  justify-content: space-around;
+  display: flex;
 }
 
+.pa-card-holder img {
+  width: 200px; /* Makes the image responsive */
+  height: 200px; /* Maintains aspect ratio */  
+}
+
+.pa-card-holder p{
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+/*Blog Area styling */
 .blog-area{
   background-color: var(--blog-bg-color);
   justify-content: space-between;
@@ -289,3 +320,6 @@ main {
   padding-left: 10px;
 }
 
+.footer-end-area {
+  background-color: var(--ui-effects-color);
+}
