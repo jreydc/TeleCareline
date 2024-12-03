@@ -9,3 +9,9 @@ menuItems.forEach(item => {
         item.classList.add('active');
     });
 });
+
+function showSidebar() {
+    const sideBar = document.querySelector('.nav-sidebar');
+    sideBar.style.display = 'flex';
+}
+

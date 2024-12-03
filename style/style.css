@@ -13,16 +13,27 @@
   padding: 0;
   text-decoration: none;
   box-sizing: border-box;
+  z-index: 0;
+}
+
+ul {
   list-style: none;
 }
 
 /* Body styling */
-body {
-  min-height: 100vh;
+img, video {
+  max-width: 100%;
+  height: auto;
 }
+
+
 /* Header */
 header {
   border-bottom: 50px solid var(--ui-effects-color); /* Blue border below the entire menu */
+}
+
+img, button, a{
+  z-index: 1;
 }
 
 p{
@@ -48,6 +59,7 @@ h3 {
 
 main {
   margin: 0;
+  overflow-x: hidden; /* Prevents horizontal scrolling */
 }
 
 footer>h1 {
@@ -66,9 +78,10 @@ footer>h1 {
   padding: 30px 20px;
   color: var(--ui-text-color);
   overflow: hidden;
-  position: sticky;
-  position: -webkit-sticky;
+  position: sticky;  
   top: 0;
+  background-color: white;
+  width: 100%;
 }
 
 /* Logo styling */
@@ -90,6 +103,31 @@ footer>h1 {
   display: inline-block;
 }
 
+/* Implementation of responsive Navigation bar*/
+
+nav .nav-sidebar {
+  margin-right: auto;
+}
+
+.nav-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  backdrop-filter: blur(10px);
+}
+
+.nav-sidebar li, a {
+  width: 100%;
+}
+
 /* Section styling for Cards*/
 .sect-cards-area{
   text-align: center;
@@ -98,6 +136,7 @@ footer>h1 {
 
 .sect-cards-area ul{
   display: flex;
+  flex-flow: row wrap;
   margin-bottom: 20px;
 }
 
@@ -173,6 +212,7 @@ footer>h1 {
   display: flex; /* Using CSS Grid for 2 columns */
   margin-bottom: 30px;
   word-wrap: normal;
+  z-index: 1;
 }
 
 .banner-image {
@@ -186,6 +226,7 @@ footer>h1 {
   height: 100%; /* Make the image fit vertically */
   object-fit: cover; /* Ensure the image covers the container without distortion */
   clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+  z-index: 1;
 }
 
 /* Banner slogan styling */
@@ -295,6 +336,7 @@ footer>h1 {
 .pa-card-holder{
   justify-content: space-around;
   display: flex;
+  flex-flow: row wrap;
 }
 
 .pa-card-holder img {
@@ -317,6 +359,11 @@ footer>h1 {
   margin: 30px;
   display: flex;
   justify-content: space-evenly;
+  flex-flow: row wrap;
+}
+
+.featured-area-section-img{
+  width: 50%;
 }
 
 .featured-area-section-img img{
@@ -327,6 +374,7 @@ footer>h1 {
 
 .featured-prod-desc{
   margin: 20px;
+  width: 45%;
 }
 
 .featured-prod-desc h3{
@@ -353,12 +401,14 @@ footer>h1 {
 /*Blog Area styling */
 .blog-area{
   background-color: var(--blog-bg-color);
-  justify-content: space-between;
+  display: flex;
 }
 
 .blog-area-section{
   margin: 30px;
   display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 .blog-area h1 {
@@ -366,16 +416,18 @@ footer>h1 {
   margin-bottom: 10px;
 }
 
-.blog-area img{
+.blog-area-img{
   margin: 20px;
   padding: 20px;
-  width: 100%;
+  width: 50%;
   height: auto;
+  
 }
 
 .blog-area-text{
-  margin: 20px;
-  padding-left: 10px;
+  width: 45%;
+  margin: 20px 20px 20px 0;
+  padding: 20px 20px 20px 0;
 }
 
 /* Footer Banner styling */
@@ -434,10 +486,6 @@ footer>h1 {
   margin: 20px;
 }
 
-.footer-card-desc {
-  margin: 20px;
-}
-
 .footer-card-desc h3 {
   margin: 20px 0px;
 }
@@ -461,6 +509,8 @@ footer>h1 {
 .footer-end-section {
   display: flex;
   justify-content: space-evenly;
+  flex-flow: row wrap;
+  overflow-x: hidden;
 }
 
 .footer-end-left{
