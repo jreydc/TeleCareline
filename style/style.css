@@ -143,8 +143,8 @@ footer>h1 {
 }
 
 #nav-menu li a.active {
-  color: var(--blog-bg-color); /* Highlight color on hover */
-  background: var(--ui-effects-color);
+  color: var(--blog-bg-color)!important; /* Highlight color on hover */
+  background: var(--ui-effects-color)!important;
 }
 
 /* Bottom border for active/hover */

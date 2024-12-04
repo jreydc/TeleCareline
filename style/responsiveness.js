@@ -1,17 +1,14 @@
-const menuItems = document.querySelectorAll('a');
-
-menuItems.forEach(item => {
-    item.addEventListener('click', () => {
-        // Remove 'active' from all menu items
-        menuItems.forEach(link => link.classList.remove('active'));
+document.addEventListener("DOMContentLoaded", function() {
+    const navLinks = document.querySelectorAll(".nav-link");
+  
+    navLinks.forEach(link => {
+      link.addEventListener("click", function() {
+        // Remove 'active' class from all nav-links
+        navLinks.forEach(nav => nav.classList.remove("active"));
         
-        // Add 'active' to the clicked menu item
-        item.classList.add('active');
+        // Add 'active' class to the clicked link
+        this.classList.add("active");
+      });
     });
-});
-
-function showSidebar() {
-    const sideBar = document.querySelector('.nav-sidebar');
-    sideBar.style.display = 'flex';
-}
+  });
 
