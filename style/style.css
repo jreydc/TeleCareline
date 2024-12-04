@@ -53,7 +53,7 @@ h1 {
 
 h3 {
   font-size: 1.5rem;
-  margin: 0px 20px;
+  margin: 0px 30px;
   color: var(--ui-effects-color); /* Dark gray for title */
 }
 
@@ -85,13 +85,13 @@ footer>h1 {
 }
 
 /* Logo styling */
-.logo img {
+.logo {
   height: 5rem; /* Adjust as needed */
   width: auto;
 }
 
 /* Navigation menu styling */
-.nav-menu {
+#nav-menu {
   list-style-type: none;
   display: flex;
   justify-content: space-around;
@@ -99,39 +99,18 @@ footer>h1 {
   gap: 20px;
 }
 
-.nav-menu li {
+#nav-menu li {
   display: inline-block;
-}
-
-/* Implementation of responsive Navigation bar*/
-
-nav .nav-sidebar {
-  margin-right: auto;
-}
-
-.nav-sidebar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 100%;
-  z-index: 999;
-  background-color: rgba(255, 255, 255, 0.2);
-  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-  display: none;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  backdrop-filter: blur(10px);
-}
-
-.nav-sidebar li, a {
-  width: 100%;
 }
 
 /* Section styling for Cards*/
 .sect-cards-area{
   text-align: center;
   list-style-type: none;
+}
+
+.sect-cards-area h1{
+  margin-top: 40px;
 }
 
 .sect-cards-area ul{
@@ -148,7 +127,7 @@ nav .nav-sidebar {
 }
 
 /* Navigation menu items */
-.nav-menu li a {
+#nav-menu li a {
   text-decoration: none;
   color: var(--text-color);
   font-size: 16px;
@@ -158,19 +137,19 @@ nav .nav-sidebar {
 }
 
 /* Active/Clicked styles */
-.nav-menu li a:hover{
+#nav-menu li a:hover{
   color: var(--blog-bg-color); /* Highlight color on hover */
   background: var(--ui-effects-color);
 }
 
-.nav-menu li a.active {
+#nav-menu li a.active {
   color: var(--blog-bg-color); /* Highlight color on hover */
   background: var(--ui-effects-color);
 }
 
 /* Bottom border for active/hover */
-.nav-menu li a.active::after,
-.nav-menu li a:hover::after {
+#nav-menu li a.active::after,
+#nav-menu li a:hover::after {
     content: ""; /* Pseudo-element for the border */
     position: absolute;
     left: 0;
@@ -181,7 +160,7 @@ nav .nav-sidebar {
 }
 
 /* Inactive state (no border) */
-.nav-menu li a::after {
+#nav-menu li a::after {
     width: 0; /* Initially no border */
 }
 
@@ -355,26 +334,19 @@ nav .nav-sidebar {
   margin: 100px 30px 150px;
 }
 
-.featured-area-section{
-  margin: 30px;
-  display: flex;
-  justify-content: space-evenly;
-  flex-flow: row wrap;
-}
-
-.featured-area-section-img{
-  width: 50%;
-}
-
-.featured-area-section-img img{
-  width: 100%;
+#featured-area-img-sect img{
+  width: 80%;
   height: auto;
   margin: 20px;
 }
 
 .featured-prod-desc{
   margin: 20px;
-  width: 45%;
+  width: 46%;
+}
+
+.featured-prod-desc p, li {
+  font-size: 1.5rem;
 }
 
 .featured-prod-desc h3{
@@ -414,6 +386,7 @@ nav .nav-sidebar {
 .blog-area h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
+  text-align: left;
 }
 
 .blog-area-img{
