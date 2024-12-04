@@ -345,8 +345,8 @@ footer>h1 {
   width: 46%;
 }
 
-.featured-prod-desc p, li {
-  font-size: 1.5rem;
+.featured-prod-desc p,li {
+  font-size: 1.25rem;
 }
 
 .featured-prod-desc h3{
@@ -362,6 +362,10 @@ footer>h1 {
 .featured-prod-title {
   display: flex;
   margin-bottom: 20px;
+}
+
+.featured-prod-title img{
+  width: 50px;
 }
 
 .featured-icon {
@@ -454,9 +458,10 @@ footer>h1 {
 }
 
 .footer-card-icon img {
-  width: 70px;
+  width: 60px;
   height: auto;
   margin: 20px;
+  max-width: 80px;
 }
 
 .footer-card-desc h3 {
