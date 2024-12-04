@@ -5,7 +5,7 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <!-- Mobile Metas -->
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <!-- Site Metas -->
         <meta name="keywords" content="" />
         <meta name="description" content="" />
@@ -28,25 +28,41 @@
     <body>
         <!-- ***** Header Area Starts ***** -->
         <header>
-            <nav class="navbar">
-                <div class="logo">
-                    <img src="images/logo.jpg" alt="Logo">
-                </div>
-                <div class="nav-menu">
-                    <ul>
-                        <li><a href="#" class="active">Home</a></li>
-                        <li><a href="#">Our Mission</a></li>
-                        <li><a href="#">Our Technology</a></li>
-                        <li><a href="#">What We Offer</a></li>
-                        <li><a href="#">What We Serve</a></li>
-                        <li><a href="#">Why Telecareline</a></li>
-                    </ul>
-                </div>
-                <div class="nav-button">
-                    <button>Our Plans</button>
-                </div>
-            </nav>
-
+              <!-- Navbar -->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#"><img src="images/logo.jpg" alt="Logo" class="logo"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ms-auto" id="nav-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Our Mission</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Our Technology</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">What We Offer</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">What We Serve</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Why Telecareline</a>
+                                </li>
+                            </ul>
+                            <div class="nav-button">
+                                <button>Our Plans</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </nav>
             <div class="header-border"></div>
         </header>
         <!-- ***** Header Area End ***** -->
@@ -83,13 +99,16 @@
                 </ul>
             </div>
             <!-- Partners Area Ends -->
-            <!-- Blog Area Starts -->
-            <section class="blog-area"> 
-                <section class="blog-area-section">
-                    <div class="blog-area-img">
-                        <img src="images/hero-bg.jpg" alt="Blog Area Image">
-                    </div>
-                    <div class="blog-area-text">
+                <!--First Blog Area Starts -->
+            <section class="blog-area py-5">
+                <div class="container">
+                  <div class="row align-items-center">
+                    <!-- Blog Image -->
+                    <div class="col-lg-6 col-md-12 d-flex justify-content-center mb-4 mb-lg-0">
+                        <img src="images/blog.jpg" alt="Blog Area Image" class="img-fluid rounded">
+                      </div>
+                    <!-- Blog Text -->
+                    <div class="col-lg-6 col-md-12">
                         <h1>Get started today!</h1>
                         <p>Ready to experience the peace of mind that comes with Telecareline?</p>
                         <p>Contact us today to learn more about our services and how we can 
@@ -100,9 +119,11 @@
                             <button>Get Started</button>
                         </div>
                     </div>
-                </section>
+                  </div>
+                </div>
             </section>
-            <!-- Banner Area Ends -->
+            
+                <!--First Blog Area Ends -->
             <!-- Plan Card Sections-->
             <section class="sect-cards-area">
                 <h1>Choose Your Plan</h1>
@@ -153,7 +174,6 @@
                     <li class="plan-card">
                         <a href="#" class="active">
                             <img src="images/products/product2.jpg" alt="Example Image" class="card-image">
-                            
                         </a>
                         <div class="plan-card-caption"> 
                             <h3>Fall Detector</h3>
@@ -229,28 +249,33 @@
                     <!-- Plan Card Smart Personal Alarm END-->
                 </ul>
             </section>
-            <section class="blog-area">
-                <section class="blog-area-section">
-                    <div class="blog-area-img">
-                        <img src="images/blog.jpg" alt="Blog Area Image">
+            <!-- Second Blog Section Start -->
+            <section class="blog-area py-5">
+                <div class="container">
+                  <div class="row align-items-center">
+                    <!-- Blog Image -->
+                    <div class="col-lg-6 col-md-12 d-flex justify-content-center mb-4 mb-lg-0">
+                        <img src="images/blog.jpg" alt="Blog Area Image" class="img-fluid rounded">
+                      </div>
+                    <!-- Blog Text -->
+                    <div class="col-lg-6 col-md-12">
+                      <h1>Simply accessible!</h1>
+                      <p>Security and safety are fundamental rights that should be within reach for all. 
+                        Price should never hinder anyone from considering an alert device from Tele Careline.
+                      </p>
+                      <p>For the price of less than a daily cup of tea or coffee, 
+                        you can enjoy the peace of mind that only a Tele Careline can provide. 
+                        With us, you're never alone in times of need. Loved ones and caregivers can rest assured, 
+                        knowing that you have round-the-clock access to assistance.
+                      </p>
+                      <div class="nav-button mt-4">
+                        <button>Get Started</button>
+                      </div>
                     </div>
-                    <div class="blog-area-text">
-                        <h1>Simply accessible!</h1>
-                        <p>Security and safety are fundamental rights that should be
-                            within reach for all. Price should never hinder anyone from
-                            considering a alert device from Tele Careline.</p>
-                        <p>For the price of less than a daily cup of tea or coffee, you
-                            can enjoy the peace of mind that only a Tele Careline can
-                            provide. With us, you're never alone in times of need. Loved
-                            ones and caregivers can rest assured, knowing that you have
-                            round-the-clock access to assistance.                            
-                        </p>
-                        <div class="nav-button">
-                            <button>Get Started</button>
-                        </div>
-                    </div>
-                </section>
+                  </div>
+                </div>
             </section>
+            <!-- Second Blog Section Start -->
             <!-- Plan Card Sections Start-->
             <section class="sect-cards-area">
                 <h1>Choose Your Personal Alarm</h1>
@@ -294,43 +319,46 @@
             </section>
             <!-- Plan Card Sections End-->
             <!-- Featured Area Starts -->
-            <section class="featured-area"> 
-                <section class="featured-area-section">
-                    <div class="featured-area-section-img">
-                        <img src="images/products/featured/gps-MT07B.jpg" alt="Featured Product Image">
-                    </div>
-                    <div class="featured-prod-desc">
-                        <h3>FEATURED PRODUCT</h3>
-                        <div class="featured-prod-title">
-                            <img src="images/icons/icon-featured.jpg" alt="Featured TeleCareline Icon" class="featured-icon">
-                            <h1>GPS Tracker MT07B</h1>
+            <section class="featured-area py-5">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <!-- Featured Product Image -->
+                        <div class="col-lg-6 col-md-12 d-flex justify-content-center mb-4 mb-lg-0">
+                            <div class="w-100" style="max-width: 500px;">
+                                <img src="images/products/featured/gps-MT07B.jpg" alt="Featured Product Image" class="img-fluid rounded">
+                            </div>
                         </div>
-                        <p>Key Features:</p>
-                        <div>
+                            <!-- Featured Product Description -->
+                        <div class="col-lg-6 col-md-12">
+                            <h3>FEATURED PRODUCT</h3>
+                            <div class="featured-prod-title d-flex align-items-center mb-3">
+                                <img src="images/icons/icon-featured.jpg" alt="Featured TeleCareline Icon" class="featured-icon me-3">
+                                <h1 class="m-0">GPS Tracker MT07B</h1>
+                            </div>
+                            <p><strong>Key Features:</strong></p>
                             <ol>
                                 <li>Mini sized, Weather-proof IP66, Rubber handle paint, feels comfortable.</li>
-                                <li>Device can be charged by docking station (2g include) and micro USB.</li>
-                                <li>Real time tracking by GPS satellite.</li>
-                                <li>Real time tracking by CellLocate, location based on the cellular network,
-                                    users are able to track in shielded environments such as indoors and enclosed
-                                    park houses.</li>
+                                <li>Device can be charged by docking station (2g included) and micro USB.</li>
+                                <li>Real-time tracking by GPS satellite.</li>
+                                <li>Real-time tracking by CellLocate, location based on the cellular network, users are able to track in shielded environments such as indoors and enclosed park houses.</li>
                                 <li>AGPS, TTFF in 30 seconds (10 seconds for GPRS included).</li>
-                                <li>Fall detection for children and elderly, patient.</li>
+                                <li>Fall detection for children and elderly patients.</li>
                             </ol>
                         </div>
                     </div>
-                </section>
+                </div>
             </section>
             <!-- Featured Area Ends -->
+  
              <!--Near Footer Banner Area Starts -->
              <section>
                 <h1>What Telecareline Offers?</h1>
                 <section class="footer-banner"> 
                     <div class="footer-banner-slogan">
                         <div class="footer-card-section">
-                            <div class="footer-card-icon">
-                                <img src="images/icons/sos-icon.jpg" alt="SOS icon">
-                            </div>
+                            <div class="footer-card-icon mb-3">
+                                <img src="images/icons/sos-icon.jpg" alt="SOS icon" class="img-fluid">
+                              </div>
                             <div class="footer-card-desc">
                                 <h3>S.O.S Alert Pendants</h3>
                                 <p>
@@ -340,8 +368,8 @@
                             </div>
                         </div>
                         <div class="footer-card-section">
-                            <div class="footer-card-icon">
-                                <img src="images/icons/customized-icon.jpg" alt="SOS icon">
+                            <div class="footer-card-icon mb-3">
+                                <img src="images/icons/customized-icon.jpg" alt="Customized icon" class="img-fluid">
                             </div>
                             <div class="footer-card-desc">
                                 <h3>Customized Response Plans</h3>
@@ -352,8 +380,8 @@
                             </div>
                         </div>
                         <div class="footer-card-section">
-                            <div class="footer-card-icon">
-                                <img src="images/icons/24-7-icon.jpg" alt="SOS icon">
+                            <div class="footer-card-icon mb-3">
+                                <img src="images/icons/24-7-icon.jpg" alt="SOS icon" class="img-fluid">
                             </div>
                             <div class="footer-card-desc">
                                 <h3>24/7 Responder Call Centre</h3>
