@@ -512,3 +512,31 @@ footer>h1 {
   display: flex;
   justify-content: space-evenly;
 }
+
+@media (max-width: 768px) {
+  .banner {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .banner-image {
+      display: none;
+  }
+
+  .banner-slogan {
+      max-width: 100%;
+  }
+
+  .footer-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-banner-image {
+      display: none;
+  }
+
+  .footer-banner-slogan {
+      max-width: 100%;
+  }
+}
